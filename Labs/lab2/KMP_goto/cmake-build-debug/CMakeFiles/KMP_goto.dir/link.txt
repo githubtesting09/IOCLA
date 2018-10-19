@@ -1,0 +1,1 @@
+/usr/bin/gcc -g   CMakeFiles/KMP_goto.dir/main.c.o  -o KMP_goto 
