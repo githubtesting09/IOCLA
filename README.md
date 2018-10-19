@@ -9,7 +9,7 @@ Assembly Intel x86
 ## Labs
 - Lab 0x1:  lipsa, irelevant
 
-- Lab 0x2: goto in C (bubble sort + KMP)
+- Lab 0x2: goto in C (cautare binara, bubble sort, KMP)
 
 - Lab 0x3: introducere in Assembly
 
