@@ -1,6 +1,11 @@
 # IOCLA
 Assembly Intel x86
 
+## Resurse
+- Introduction to assembly language programming for pentium and RISC processors, Sivarama Dandamudi
+
+- Assembly Language Step-By-Step - Programming with Linux, Jeff Duntemann
+
 ## Labs
 - Lab 0x1:  lipsa, irelevant
 
