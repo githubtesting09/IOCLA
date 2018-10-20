@@ -1,6 +1,8 @@
 # IOCLA
 Assembly Intel x86
 
+Programele ```.asm``` se folosesc macro-uri predefinite ale SASM
+
 ## Resurse
 - Introduction to assembly language programming for pentium and RISC processors, Sivarama Dandamudi
 
