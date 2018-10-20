@@ -34,7 +34,7 @@ Programe de baza scrise in Assembly
 
 - calcularea celui de-al ```n```-lea termen Fibonacci, iterativ in ```O(n)```
 
-- pentru varianta implementata in ```O(logn)```, a se vedea [varianta cu exponentiere logaritmica de matrice](https://github.com/teodutu/IOCLA/blob/master/Snippets/fibonacci_lgput.asm)
+- pentru implementarea in ```O(logn)```, a se vedea [varianta cu exponentiere logaritmica de matrice](https://github.com/teodutu/IOCLA/blob/master/Snippets/fibonacci_lgput.asm)
 
 ## examples
 
