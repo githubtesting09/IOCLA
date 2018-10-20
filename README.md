@@ -1,7 +1,7 @@
 # IOCLA
 Assembly Intel x86
 
-Programele ```.asm``` se folosesc macro-uri predefinite ale SASM
+Programele ```.asm``` se folosesc macro-urile de citire de la ```stdin``` si scriere la ```stdout``` predefinite ale SASM
 
 ## Resurse
 - Introduction to assembly language programming for pentium and RISC processors, Sivarama Dandamudi
