@@ -17,5 +17,5 @@ Programe ```C``` scrise folosind doar ```if```-uri si ```goto``` si, acolo unde 
 ## bubble_sort
 
 - sortarea unui vector in ```O(kn)```
--   ```k``` = numarul de inversiuni din vector
--   ```n``` = numarul de elemete ale vectorului
+   - ```k``` = numarul de inversiuni din vector
+   - ```n``` = numarul de elemete ale vectorului
