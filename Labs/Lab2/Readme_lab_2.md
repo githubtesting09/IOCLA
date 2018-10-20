@@ -17,5 +17,14 @@ Programe ```C``` scrise folosind doar ```if```-uri si ```goto``` si, acolo unde 
 ## bubble_sort
 
 - sortarea unui vector in ```O(kn)```
-   - ```k``` = numarul de inversiuni din vector
-   - ```n``` = numarul de elemete ale vectorului
+```k``` = numarul de inversiuni din vector
+
+## max_vect
+
+- maximul dintr-un vector... nimic deosebit
+
+## warm-up-gotos
+
+- bogosort randomizand folosind ```rand()```
+
+- [best code comments](http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered)
