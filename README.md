@@ -3,12 +3,7 @@ Assembly Intel x86
 
 Programele ```.asm``` se folosesc macro-urile de citire de la ```stdin``` si scriere la ```stdout``` predefinite ale SASM
 
-## Resurse
-- Introduction to assembly language programming for pentium and RISC processors, Sivarama Dandamudi
-
-- Assembly Language Step-By-Step - Programming with Linux, Jeff Duntemann
-
-## Labs
+## Laburi
 - Lab 0x1:  lipsa, irelevant
 
 - Lab 0x2: goto in C (cautare binara, bubble sort, KMP)
@@ -33,6 +28,10 @@ Programele ```.asm``` se folosesc macro-urile de citire de la ```stdin``` si scr
 
 - Lab 0xC: TODO
 
+## Resurse
+- Introduction to assembly language programming for pentium and RISC processors, Sivarama Dandamudi
+
+- Assembly Language Step-By-Step - Programming with Linux, Jeff Duntemann
 
 ## Teme
 - Tema 1 - ???: TODO
@@ -41,5 +40,5 @@ Programele ```.asm``` se folosesc macro-urile de citire de la ```stdin``` si scr
 
 - Tema 3 - ???: TODO
 
-## Snippets
+## Snippet-uri
 - al n-lea termen Fibonacci cu exponentiere logaritmica de matrice: incercari progresive de optimizare
