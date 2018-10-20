@@ -1,4 +1,4 @@
-# Install script for directory: /media/teo/2TB/Chestii/Poli/An_2/IOCLA/lab2/bubble_sort
+# Install script for directory: /media/teo/1TB/Poli/An_2/IOCLA/Labs/Lab2/bubble_sort
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/teo/2TB/Chestii/Poli/An_2/IOCLA/lab2/bubble_sort/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/media/teo/1TB/Poli/An_2/IOCLA/Labs/Lab2/bubble_sort/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/media/teo/2TB/Chestii/Poli/An_2/IOCLA/lab2/bubble_sort/main.c
+/media/teo/1TB/Poli/An_2/IOCLA/Labs/Lab2/bubble_sort/main.c
 stdio.h
+-
+stdlib.h
 -
 

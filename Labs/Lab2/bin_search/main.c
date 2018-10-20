@@ -1,14 +1,13 @@
 #include <stdio.h>
+#include <malloc.h>
 
-#define MAX_N 1000000
-
-int v[MAX_N];
 int main() {
-    int n, i = 0, j, left = 0, right, mid, sol = -1, target;
+    int n, i = 0, target, sol = -1, step = 1;
 
     scanf("%d %d", &n, &target);
+    int *v = (int*)malloc(n * sizeof(*v));
 
-    read_data:
+read_data:
     if (i < n) {
         scanf("%d", v + i);
 
@@ -16,30 +15,39 @@ int main() {
         goto read_data;
     }
 
-    right = n;
-
-    bin_search:
-    if (left <= right) {
-        mid = (left + right) / 2;
-
-        if (v[mid] == target) {
-            sol = mid;
-        } else {
-            if (v[mid] < target) {
-                left = mid + 1;
-            } else {
-                right = mid - 1;
-            }
-
-            goto bin_search;
-        }
+make_step:
+    if (step < n) {
+        step <<= 1;
+        goto make_step;
     }
 
+    step >>= 1;
+    i = 0;
+
+bin_search:
+    if (!step) {
+        goto end;
+    }
+
+    if ((i + step < n && v[i + step] == target)) {
+        sol = i + step;
+        goto end;
+    }
+
+    if (i + step < n && v[i + step] < target) {
+        i += step;
+    }
+
+    step >>= 1;
+    goto bin_search;
+
+end:
     if (sol != -1) {
         printf("%d\n", sol);
     } else {
         printf("ERROR 404: Not found!\n");
     }
 
+    free(v);
     return 0;
 }

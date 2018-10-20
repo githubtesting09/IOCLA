@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/media/teo/2TB/Chestii/Poli/An_2/IOCLA/lab2/bubble_sort/main.c" "/media/teo/2TB/Chestii/Poli/An_2/IOCLA/lab2/bubble_sort/cmake-build-debug/CMakeFiles/bubble_sort.dir/main.c.o"
+  "/media/teo/1TB/Poli/An_2/IOCLA/Labs/Lab2/bubble_sort/main.c" "/media/teo/1TB/Poli/An_2/IOCLA/Labs/Lab2/bubble_sort/cmake-build-debug/CMakeFiles/bubble_sort.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

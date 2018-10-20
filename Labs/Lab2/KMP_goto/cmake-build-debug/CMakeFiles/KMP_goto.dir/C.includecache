@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/media/teo/2TB/Info/KMP_goto/main.c
+/media/teo/1TB/Poli/An_2/IOCLA/Labs/Lab2/KMP_goto/main.c
 stdio.h
 -
 string.h
+-
+malloc.h
 -
 

@@ -1,119 +1,102 @@
 #include <stdio.h>
 #include <string.h>
+#include <malloc.h>
 
-#define MAX_STR 2000001
-#define MAX_FINDS 1000
-
-FILE *pFileIn, *pFileOut;
-
-int numApp, map[MAX_STR], apps[MAX_FINDS];
-char pattern[MAX_STR], str[MAX_STR];
+#define MAX_STR 2000002
+#define MAX_APPS 1001
 
 int main() {
-    pFileIn = fopen("strmatch.in", "r");
-    pFileOut = fopen("strmatch.out", "w");
+    char *pattern = malloc(MAX_STR);
+    char *str = malloc(MAX_STR);
+
+    FILE *pFileIn = fopen("strmatch.in", "r");
+    FILE *pFileOut = fopen("strmatch.out", "w");
 
     fgets(pattern, MAX_STR, pFileIn);
     fgets(str, MAX_STR, pFileIn);
 
-    int lenStr = strlen(str);
+    int lenStr = strlen(str) - 1;
     int lenPatt = strlen(pattern) - 1;
-    int i, j;
 
     if (lenPatt > lenStr) {
         fprintf(pFileOut, "0\n");
         goto return_label;
     }
 
-//    for (int i = 1, j = 0; i < lenPatt; ++i) {
-//        while (pattern[i] != pattern[j] && j) {
-//            j = map[j - 1];
-//        }
-//
-//        if (pattern[i] == pattern[j]) {
-//            ++j;
-//        }
-//
-//        map[i] = j;
-//    }
-    i = 1; j = 0;
+    int *map = malloc(lenPatt * sizeof(*map));
+    int *apps = malloc(MAX_APPS * sizeof(*apps));
+    int i = 1, j = 0, numApp = 0;
 
-    build_prefArray:
-    if (i < lenPatt) {
-
-        back_prefArray:
-        if (pattern[i] != pattern[j] && j) {
-            j = map[j - 1];
-            goto back_prefArray;
-        }
-
-        if (pattern[i] == pattern[j]) {
-            ++j;
-        }
-
-        map[i] = j;
-
-        ++i;
-        goto build_prefArray;
+build_prefArray:
+    if (i == lenPatt) {
+        goto make_KMP;
     }
 
-//    for (int i = 0, j = 0; i < lenStr; ++i) {
-//        while (pattern[j] != str[i] && j) {
-//            j = map[j - 1];
-//        }
-//
-//        if (str[i] == pattern[j]) {
-//            ++j;
-//        }
-//
-//        if (j == lenPatt) {
-//            if (++numApp < MAX_FINDS) {
-//                apps[numApp] = i - lenPatt + 1;
-//            }
-//
-//            j = map[j - 1];
-//        }
-//    }
+back_prefArray:
+    if (pattern[i] != pattern[j] && j) {
+        j = map[j - 1];
+        goto back_prefArray;
+    }
 
+    if (pattern[i] == pattern[j]) {
+        ++j;
+    }
+
+    map[i] = j;
+    ++i;
+    goto build_prefArray;
+
+make_KMP:
     i = 0; j = 0;
 
-    KMP_search:
-    if (i < lenStr) {
-
-        back_on_array:
-        if (pattern[j] != str[i] && j) {
-            j = map[j - 1];
-            goto back_on_array;
-        }
-
-        if (str[i] == pattern[j]) {
-            ++j;
-        }
-
-        if (j == lenPatt) {
-            if (++numApp < MAX_FINDS) {
-                apps[numApp] = i - lenPatt + 1;
-            }
-
-            j = map[j - 1];
-        }
-
-        ++i;
-        goto KMP_search;
+KMP_search:
+    if (i == lenStr) {
+        goto print_matches;
     }
 
+back_on_array:
+    if (pattern[j] != str[i] && j) {
+        j = map[j - 1];
+        goto back_on_array;
+    }
+
+    if (str[i] == pattern[j]) {
+        ++j;
+    }
+
+    if (j == lenPatt) {
+        if (numApp < 1000) {
+            apps[numApp] = i - lenPatt + 1;
+        }
+
+        ++numApp;
+        j = map[j - 1];
+    }
+
+    ++i;
+    goto KMP_search;
+
+print_matches:
     fprintf(pFileOut, "%d\n", numApp);
-    numApp = (numApp > 1000 ? 1000 : numApp);
+    numApp = (numApp < 1000 ? numApp : 1000);
+    i = 0;
 
-    i = 1;
-
-    print_matches:
-    if (i <= numApp) {
+print_apps:
+    if (i < numApp) {
         fprintf(pFileOut, "%d ", apps[i]);
-        goto print_matches;
+        ++i;
+        goto print_apps;
     }
     fprintf(pFileOut, "\n");
 
-    return_label:
+    free(map);
+    free(apps);
+
+return_label:
+    free(pattern);
+    free(str);
+    fclose(pFileIn);
+    fclose(pFileOut);
+
     return 0;
 }
