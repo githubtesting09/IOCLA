@@ -16,15 +16,14 @@ CMAIN:
     ret
     
 print:    
-    for_i_1_n:
-        cmp ecx, 0
-        je print_goodbye
-        
-        PRINT_STRING myString
-        NEWLINE
+    cmp ecx, 0
+    je print_goodbye
 
-        dec ecx
-        jmp for_i_1_n
+    PRINT_STRING myString
+    NEWLINE
+
+    dec ecx
+    jmp print
 
     print_goodbye:
     PRINT_STRING goodbye
