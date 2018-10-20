@@ -25,7 +25,7 @@ print:
     dec ecx
     jmp print
 
-    print_goodbye:
+print_goodbye:
     PRINT_STRING goodbye
 
     ret
