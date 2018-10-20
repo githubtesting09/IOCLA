@@ -30,6 +30,8 @@ Laburi IOCLA 2018
 
 - 6-fibonacci
 
+- examples
+
 ## Lab0x4 - basic ops and loops
 
 - 0-recap

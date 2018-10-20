@@ -65,11 +65,9 @@ back_on_array:
     }
 
     if (j == lenPatt) {
-        if (numApp < 1000) {
-            apps[numApp] = i - lenPatt + 1;
-        }
 
-        ++numApp;
+        apps[numApp++] = i - lenPatt + 1;
+
         j = map[j - 1];
     }
 
@@ -78,7 +76,6 @@ back_on_array:
 
 print_matches:
     fprintf(pFileOut, "%d\n", numApp);
-    numApp = (numApp < 1000 ? numApp : 1000);
     i = 0;
 
 print_apps:
