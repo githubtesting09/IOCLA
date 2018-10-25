@@ -32,7 +32,7 @@ Laburi IOCLA 2018
 
 - examples
 
-## Lab0x4 - basic ops and loops
+## Lab0x4 - operatii de baza si `loop`-uri
 
 - 0-recap
 
@@ -46,3 +46,14 @@ Laburi IOCLA 2018
 
 - 9-extract-from-vect
 
+## Lab0x5 - vectori si structuri
+
+- 1-memset
+
+- 2-3-strings
+
+- 4-5-print-structure
+
+- 6-process-structure
+
+- 7-find-substring
