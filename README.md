@@ -10,9 +10,9 @@ Programele ```.asm``` se folosesc macro-urile de citire de la ```stdin``` si scr
 
 - Lab 0x3: introducere in Assembly
 
-- Lab 0x4: inmultire, impartire, ```loop```
+- Lab 0x4: inmultire, impartire, `loop`
 
-- Lab 0x5: TODO
+- Lab 0x5: vectori + structuri
 
 - Lab 0x6: TODO
 
@@ -42,3 +42,4 @@ Programele ```.asm``` se folosesc macro-urile de citire de la ```stdin``` si scr
 
 ## Snippet-uri
 - al n-lea termen Fibonacci cu exponentiere logaritmica de matrice: incercari progresive de optimizare
+- KMP: incercari de a eficientiza unele constructii `if`-`else` si "`for`"-uri
