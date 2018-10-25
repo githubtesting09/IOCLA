@@ -20,7 +20,7 @@ CMAIN:
     ; TODO: Fill source_length with the length of the source_text string.
     ; Find the length of the string using scasb.
     mov al, 0  ; \0
-    mov edi, source_text
+    lea edi, [source_text]
     cld
     
     repne scasb

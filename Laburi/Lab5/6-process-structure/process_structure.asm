@@ -33,7 +33,7 @@ CMAIN:
     mov ebp, esp
 
     ; TODO: store in a register the address of the sample_student struct
-    lea eax, [sample_student]
+    mov eax, [sample_student]
 
     ; TODO: copy the first 3 bytes from the name field to id using movsb
     mov ecx, 3
