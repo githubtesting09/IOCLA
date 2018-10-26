@@ -33,7 +33,7 @@ Programele ```.asm``` se folosesc macro-urile de citire de la ```stdin``` si scr
 
 - Assembly Language Step-By-Step - Programming with Linux, Jeff Duntemann
 
-- comenzi GDB;S
+- [Comenzi GDB](http://visualgdb.com/gdbreference/commands/);
 
 ## Teme
 - Tema 1 - ???: TODO
