@@ -38,6 +38,6 @@
 
 - afisarea tuturor aparitiilor unui substring intr-un string;
 
-- complexitate: `O(mn)`, cu m = lungimea substringului si n = lungimea stringului (implementarea in `O(m + n)` ce foloseste KMP e [aici](https://github.com/teodutu/IOCLA/blob/master/Snippeturi/find_substring_KMP.asm));
+- complexitate: `O(mn)`, cu m = lungimea substringului si n = lungimea stringului (implementarea in `O(m + n)` ce foloseste KMP e [aici](https://github.com/teodutu/IOCLA/blob/master/Snippeturi/find_substring_KMP.asm) si urmeaza modelul [acesta](https://github.com/teodutu/IOCLA/blob/master/Laburi/Lab2/KMP_goto/main.c));
 
 - utilizare `rep` + `cmps`.

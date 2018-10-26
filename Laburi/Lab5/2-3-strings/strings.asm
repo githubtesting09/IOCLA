@@ -18,7 +18,7 @@ CMAIN:
 
     ; TODO1: compute the length of a string
     mov al, 0  ; \0
-    mov edi, string
+    lea edi, [string]
     cld
     
     repne scasb
@@ -38,7 +38,7 @@ CMAIN:
     mov al, [char]  ; 'i'
     mov ecx, edi
     lea edx, [string + edi]
-    mov edi, string
+    lea edi, [string]
     xor ebx, ebx
 
     ; TODO2: save the result in at address occurences

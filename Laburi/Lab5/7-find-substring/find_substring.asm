@@ -37,9 +37,9 @@ find_pattern:
     
     mov ecx, [substr_length]
     lea esi, [source_text + eax]
-    mov edi, substring
+    lea edi, [substring]
     
-    rep cmpsb
+    repe cmpsb
     jne no_match
     
     PRINT_STRING print_format
