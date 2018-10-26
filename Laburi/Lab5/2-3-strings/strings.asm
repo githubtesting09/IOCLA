@@ -1,7 +1,7 @@
 %include "io.inc"
 
 section .data
-    string db "Lorem ipsum dolor sit amet.", 0
+    string db "Lorem ipsum dolor sit amet.i", 0
     print_strlen db "strlen: ", 10, 0
     print_occ db "occurences of `i`:", 10, 0
 
@@ -34,6 +34,7 @@ CMAIN:
     NEWLINE
 
     ; TODO2: compute the number of occurences
+    xor eax, eax
     mov al, [char]  ; 'i'
     mov ecx, edi
     lea edx, [string + edi]
@@ -44,10 +45,14 @@ CMAIN:
 find_i:
     repne scasb
     
-    cmp edi, edx
-    jge print
-    
+    cmp al, byte [edi - 1]
+    jnz loop_back
     inc ebx
+
+loop_back:
+    cmp edi, edx
+    je print
+
     jmp find_i
 
 print:
