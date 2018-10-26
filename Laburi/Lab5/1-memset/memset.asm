@@ -19,7 +19,7 @@ CMAIN:
     mov al, [char]
 
     ; TODO: set edi to point to the destination string
-    mov edi, string
+    lea edi, [string]
 
     ; TODO: set ecx to the number of times stosb will be performed
     mov ecx, LENGTH

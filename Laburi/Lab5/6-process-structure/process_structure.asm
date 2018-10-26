@@ -29,11 +29,12 @@ section .text
 global CMAIN
 
 CMAIN:
+    mov ebp, esp; for correct debugging
     push ebp
     mov ebp, esp
 
     ; TODO: store in a register the address of the sample_student struct
-    mov eax, [sample_student]
+    lea eax, [sample_student]
 
     ; TODO: copy the first 3 bytes from the name field to id using movsb
     mov ecx, 3
