@@ -63,3 +63,17 @@ Laburi IOCLA 2018
 `ERROR 404: Lab not found!`
 
 - GDB, `objdump`, `nm`, [cppcheck](http://cppcheck.sourceforge.net/), asamblare si linkare din lina de comanda
+
+## Lab0x7 - lucrul cu stiva
+
+- 0-mean
+
+- 1-max
+
+- 2-reverse
+
+- 3-stack-addressing
+
+- 4-local-var
+
+- 5-gcd
