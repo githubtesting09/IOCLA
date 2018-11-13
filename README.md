@@ -14,11 +14,11 @@ Programele ```.asm``` se folosesc macro-urile de citire de la ```stdin``` si scr
 
 - Lab 0x5: vectori + structuri
 
-- Lab 0x6: TODO
+- Lab 0x6: analiza sintatctica si dinamica
 
-- Lab 0x7: TODO
+- Lab 0x7: utilizarea stivei
 
-- Lab 0x8: TODO
+- Lab 0x8: functii in Assembly
 
 - Lab 0x9: TODO
 
@@ -36,7 +36,11 @@ Programele ```.asm``` se folosesc macro-urile de citire de la ```stdin``` si scr
 - [Comenzi GDB](http://visualgdb.com/gdbreference/commands/);
 
 ## Teme
-- Tema 1 - ???: TODO
+- Tema 1 - Forma poloneza postfixata: (9.11.2018 - 23.11.2018)
+
+- Tema 2 - ???: TODO
+
+- Tema 3 - ???: TODO
 
 - Tema 2 - ???: TODO
 
