@@ -12,11 +12,11 @@
 
 ## 1-hello-world
 
-- inexistent, irelevant
+- exemplu apelare `puts`, irelevant
 
 ## 2-test
 
-- exemplu de utilizare `objdump`, similar cu cele din laboratorul 6;
+- exemplu de utilizare `objdump`, similar cu cele din [laboratorul 6](https://ocw.cs.pub.ro/courses/iocla/laboratoare/laborator-06);
 
 ## 3-print-string
 
