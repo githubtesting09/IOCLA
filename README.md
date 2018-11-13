@@ -14,7 +14,7 @@ Programele ```.asm``` se folosesc macro-urile de citire de la ```stdin``` si scr
 
 - Lab 0x5: vectori + structuri
 
-- Lab 0x6: analiza sintatctica si dinamica
+- Lab 0x6: lipsa, analiza sintatctica si dinamica
 
 - Lab 0x7: utilizarea stivei
 
