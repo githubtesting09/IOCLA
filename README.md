@@ -42,10 +42,6 @@ Programele ```.asm``` se folosesc macro-urile de citire de la ```stdin``` si scr
 
 - Tema 3 - ???: TODO
 
-- Tema 2 - ???: TODO
-
-- Tema 3 - ???: TODO
-
 ## Snippet-uri
 - al n-lea termen Fibonacci cu exponentiere logaritmica de matrice: incercari progresive de optimizare
 - KMP: incercari de a eficientiza unele constructii `if`-`else` si "`for`"-uri
