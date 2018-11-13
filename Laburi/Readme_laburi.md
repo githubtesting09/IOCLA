@@ -77,3 +77,19 @@ Laburi IOCLA 2018
 - 4-local-var
 
 - 5-gcd
+
+## Lab0x8 - apeluri de functii
+
+- 0-fibo
+
+- 1-hello-world
+
+- 2-test
+
+- 3-print-string
+
+- 4-5-print-string-len
+
+- 6-toupper
+
+- bonus-rot13 
