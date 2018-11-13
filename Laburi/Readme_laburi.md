@@ -2,7 +2,7 @@
 Laburi IOCLA 2018
 
 ## Lab0x1 - sizeof
-```ERROR 404: Lab not found!```
+`ERROR 404: Lab not found!`
 
 ## Lab0x2 - gotos in C
 
@@ -57,3 +57,9 @@ Laburi IOCLA 2018
 - 6-process-structure
 
 - 7-find-substring
+
+## Lab0x6 - analiza statica si dinamica
+
+`ERROR 404: Lab not found!`
+
+- GDB, `objdump`, `nm`, [cppcheck](http://cppcheck.sourceforge.net/), asamblare si linkare din lina de comanda
