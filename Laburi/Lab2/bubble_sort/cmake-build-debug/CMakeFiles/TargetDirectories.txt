@@ -1,3 +1,0 @@
-/media/teo/1TB/Poli/An_2/IOCLA/Labs/Lab2/bubble_sort/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/media/teo/1TB/Poli/An_2/IOCLA/Labs/Lab2/bubble_sort/cmake-build-debug/CMakeFiles/edit_cache.dir
-/media/teo/1TB/Poli/An_2/IOCLA/Labs/Lab2/bubble_sort/cmake-build-debug/CMakeFiles/bubble_sort.dir
