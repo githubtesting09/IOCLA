@@ -2,7 +2,7 @@
 
 - sintaxa si utilizarea functiilor in Assembly x86;
 
-- laboratorul este bazat pe cel anterior, despre stiva;
+- laboratorul este bazat pe [cel anterior](https://github.com/teodutu/IOCLA/tree/master/Laburi/Lab7), despre stiva;
 
 ## 0-fibo
 
