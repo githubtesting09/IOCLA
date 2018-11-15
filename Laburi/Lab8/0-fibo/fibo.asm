@@ -5,7 +5,7 @@
 section .text
 global CMAIN
 CMAIN:
-    mov ebp, esp
+    lea ebp, [esp]
 
     ; TODO - replace below instruction with the algorithm for the Fibonacci sequence
     push 1
@@ -32,6 +32,6 @@ print:
     cmp ecx, 0
     ja print
 
-    mov esp, ebp
+    lea esp, [ebp]
     xor eax, eax
     ret

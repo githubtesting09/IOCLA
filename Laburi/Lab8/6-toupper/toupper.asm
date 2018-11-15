@@ -39,7 +39,7 @@ return:
 
 CMAIN:
     push ebp
-    mov ebp, esp
+    lea ebp, [esp]
 
     push mystring
     push before_format

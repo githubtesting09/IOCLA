@@ -43,7 +43,7 @@ return:
 
 CMAIN:
     push ebp
-    mov ebp, esp
+    lea ebp, [esp]
     
     push string
     call rot13

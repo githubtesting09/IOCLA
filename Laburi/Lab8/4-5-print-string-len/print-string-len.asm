@@ -11,7 +11,7 @@ global CMAIN
 
 reverse_string:
     push ebp
-    mov ebp, esp
+    lea ebp, [esp]
 
     mov eax, dword [ebp+8]
     mov ecx, dword [ebp+12]

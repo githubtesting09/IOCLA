@@ -7,7 +7,7 @@ section .text
 global CMAIN
 CMAIN:
     push ebp
-    mov ebp, esp
+    lea ebp, [esp]
 
     PRINT_STRING mystring
 
