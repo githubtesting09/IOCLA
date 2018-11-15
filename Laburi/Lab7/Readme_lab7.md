@@ -1,4 +1,4 @@
-# Lab0x7 - lucrul cu stiva
+# Lab 7 - lucrul cu stiva
 
 - operatii cu stiva unui sistem `x86`;
 

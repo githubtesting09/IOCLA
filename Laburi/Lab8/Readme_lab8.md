@@ -1,4 +1,4 @@
-# Lab8
+# Lab 8
 
 - sintaxa si utilizarea functiilor in Assembly x86;
 
