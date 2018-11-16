@@ -23,8 +23,8 @@ generate_fibo:
     inc ecx
     jmp generate_fibo
 
-
     mov ecx, NUM_FIBO
+
 print:
     PRINT_UDEC 4, [esp + (ecx - 1) * 4]
     PRINT_STRING " "
@@ -32,6 +32,6 @@ print:
     cmp ecx, 0
     ja print
 
-    lea esp, [ebp]
     xor eax, eax
+    lea esp, [ebp]
     ret

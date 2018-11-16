@@ -15,5 +15,6 @@ CMAIN:
     push mystring
     call puts
 
+    xor eax, eax
     leave
     ret

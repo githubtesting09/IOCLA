@@ -29,8 +29,8 @@ copy_one_byte:
     inc edx
     mov byte [edx], 0
 
-    leave
-    ret
+    leave ; lea esp, [ebp], pop ebp
+    ret ; pop eip
 
 CMAIN:
     push ebp
@@ -64,6 +64,6 @@ print:
     push store_string
     call puts
 
-    lea ebp, [esp]
+    xor eax, eax
     leave
     ret
