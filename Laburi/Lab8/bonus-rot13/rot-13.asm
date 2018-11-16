@@ -12,23 +12,18 @@ rot13:
     
     xor ebx, ebx
     mov ecx, [ebp + 8]
-rot13_on_a_char:
-    mov bl, [ecx]
-    
-    test bl, bl
+rot13_on_a_char:   
+    cmp [ecx], byte 0
     jz return
-    cmp bl, ' '
+    cmp [ecx], byte ' '
     je next_char
-    cmp bl, 'm'
+    cmp [ecx], byte 'm'
     ja above_13
 
-    lea eax, [ebx + 13]
-    jmp change_char
+    add [ecx], byte 13
+    jmp next_char
 above_13:
-    lea eax, [ebx + 'a' + 12 - 'z']
-
-change_char:
-    mov [ecx], al
+    sub [ecx], byte 13
 
 next_char:
     inc ecx
@@ -48,7 +43,6 @@ CMAIN:
     push string
     call puts
     
-    lea esp, [ebp]
     xor eax, eax
     leave
     ret
