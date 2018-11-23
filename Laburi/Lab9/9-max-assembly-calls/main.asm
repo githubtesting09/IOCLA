@@ -15,7 +15,6 @@ section .text
 global main
 
 main:
-    mov ebp, esp; for correct debugging
     push rbp
     mov rbp, rsp
 
