@@ -1,5 +1,6 @@
 extern printf
 extern get_max
+extern printf
 
 section .bss
     pos: resd 1
@@ -24,14 +25,14 @@ main:
     mov rsi, len
     shr rsi, 2
 
-    lea rdi, [pos]
-    mov rdx, arr
+    ;lea rdi, [pos]
+    ;lea rdx, [arr]
     call get_max
 
     ; Print max.
-    mov rdi, [pos]
+    ;mov rdi, [pos]
     lea rsi, [rax]
-    lea rdx, [print_format]
+    ;lea rdx, [print_format]
     xor rax, rax
     call printf
 
