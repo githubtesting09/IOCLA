@@ -9,7 +9,6 @@ section .data
     len: equ $-arr
 
     print_format: db "max: %u", 13, 10, "pos: %u", 13, 10
-    ;print_format: db 65
 
 section .text
 
