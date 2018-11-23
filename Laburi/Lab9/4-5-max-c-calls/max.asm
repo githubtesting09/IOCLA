@@ -10,7 +10,7 @@ get_max:
     ; [ebp + 12] is array length
     ; [ebp + 16] is the address of pos
     
-    push ebx  ; de ce? fara => seg fault
+    push ebx
 
     mov ebx, [ebp + 8]
     mov ecx, [ebp + 12]
