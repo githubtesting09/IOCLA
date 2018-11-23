@@ -1,4 +1,3 @@
-extern printf
 extern get_max
 extern printf
 
@@ -10,12 +9,14 @@ section .data
     len: equ $-arr
 
     print_format: db "max: %u", 13, 10, "pos: %u", 13, 10
+    ;print_format: db 65
 
 section .text
 
 global main
 
 main:
+    mov ebp, esp; for correct debugging
     push rbp
     mov rbp, rsp
 
@@ -25,14 +26,15 @@ main:
     mov rsi, len
     shr rsi, 2
 
-    ;lea rdi, [pos]
-    ;lea rdx, [arr]
+    mov rdx, pos
+    mov rdi, arr
     call get_max
 
     ; Print max.
-    ;mov rdi, [pos]
-    lea rsi, [rax]
-    ;lea rdx, [print_format]
+    mov rbx, pos
+    mov rdx, [rbx]
+    mov rsi, rax
+    mov rdi, print_format
     xor rax, rax
     call printf
 
