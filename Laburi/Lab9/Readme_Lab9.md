@@ -12,7 +12,7 @@
 
 - `: "r"` -> input;
 
-- `"eax", ...` -> registrii utilizati.
+- `: "eax", ...` -> registrii utilizati.
 
 - despre alte [constrangeri](https://gcc.gnu.org/onlinedocs/gcc/Simple-Constraints.html#Simple-Constraints).
 
