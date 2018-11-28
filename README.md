@@ -20,7 +20,7 @@ Programele ```.asm``` se folosesc macro-urile de citire de la ```stdin``` si scr
 
 - Lab 0x8: functii in Assembly
 
-- Lab 0x9: TODO
+- Lab 0x9: interactiunea C - Assembly
 
 - Lab 0xA: TODO
 
