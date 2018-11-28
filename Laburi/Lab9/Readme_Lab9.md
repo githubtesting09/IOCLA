@@ -59,6 +59,6 @@
 
 ## 9-max-assembly-calls
 
-- - exercitiul `7`, care acum foloseste *Assembly x86_64*;
+- exercitiul `7`, care acum foloseste *Assembly x86_64*;
 
 - **Atentie la Makefile!**: executabilul trebuie compilat cu flag-ul `-no-pie` (linker voodoo, idk...).
