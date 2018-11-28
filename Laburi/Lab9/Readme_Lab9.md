@@ -30,7 +30,7 @@
 
 ## 4-5-max-c-calls
 
-- se apeleaza din *C* functia `get_max`, definita `global` in Assembly;
+- se apeleaza din *C* functia `get_max`, definita `global` in *Assembly*;
 
 - parametri (in ordinea aparitiei pe stiva):
 	- pointer la vector;
