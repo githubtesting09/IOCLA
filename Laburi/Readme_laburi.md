@@ -92,4 +92,20 @@ Laburi IOCLA 2018
 
 - 6-toupper
 
-- bonus-rot13 
+- bonus-rot13
+
+## Lab0x9 - interactiunea dintre C si Assembly
+
+- 1-inline-for
+
+- 2-inline-rotate
+
+- 3-inline-cpuid
+
+- 4-5-max-c-calls
+
+- 6-7-max-assembly-calls
+
+- 8-max-c-calls-x64
+
+- 9-max-assembly-calls
