@@ -47,10 +47,7 @@ fill_byte:
     cmp ecx, 64
     jl fill_byte
     
-    mov byte [ebp - 4], 0xef               ; 0xCAFEBABE -> 0xDEADBEEF (little endian)
-    mov byte [ebp - 3], 0xbe
-    mov byte [ebp - 2], 0xad
-    mov byte [ebp - 1], 0xde
+    mov dword [ebp - 4], 0xdeadbeef               ; 0xCAFEBABE -> 0xDEADBEEF
 
     ; Print data in buffer.
     push buffer_intro_message

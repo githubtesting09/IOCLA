@@ -109,3 +109,17 @@ Laburi IOCLA 2018
 - 8-max-c-calls-x64
 
 - 9-max-assembly-calls
+
+## Lab0xA - gestiunea bufferelor
+
+- 1-data-buffer
+
+- 2-3-4-stack-buffer
+
+- 5-6-read-stdin
+
+- 7-read-stdin-fgets
+
+- 8-c-buffer-overflow
+
+- 9-overflow-in-binary

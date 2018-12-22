@@ -196,13 +196,13 @@ Disassembly of section .text:
  8048503:	c7 45 f4 78 56 34 12 	mov    DWORD PTR [ebp-0xc],0x12345678
  804850a:	83 ec 08             	sub    esp,0x8
  804850d:	ff 75 08             	push   DWORD PTR [ebp+0x8]
- 8048510:	8d 45 d4             	lea    eax,[ebp-0x2c]               ; parametrul se copiaza la epb - 44
+ 8048510:	8d 45 d4             	lea    eax,[ebp-0x2c]                   ; parametrul se copiaza la epb - 44
  8048513:	50                   	push   eax
  8048514:	e8 57 fe ff ff       	call   8048370 <strcpy@plt>
- 8048519:	83 c4 10             	add    esp,0x10                     ; irelevant...
+ 8048519:	83 c4 10             	add    esp,0x10                         ; irelevant...
  804851c:	8b 45 08             	mov    eax,DWORD PTR [ebp+0x8]
  804851f:	0f b6 40 01          	movzx  eax,BYTE PTR [eax+0x1]
- 8048523:	88 45 e3             	mov    BYTE PTR [ebp-0x1d],al       ; ...irelevant
+ 8048523:	88 45 e3             	mov    BYTE PTR [ebp-0x1d],al           ; ...irelevant
  8048526:	81 7d f4 50 52 30 4e 	cmp    DWORD PTR [ebp-0xc],0x4e305250   ; ebp - 12 trebuie sa fie 0x4e305250 = N0RP
  804852d:	75 07                	jne    8048536 <check_string+0x39>
  804852f:	e8 97 ff ff ff       	call   80484cb <success>

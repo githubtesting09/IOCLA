@@ -45,7 +45,7 @@ main:
 
     lea ebx, [ebp-68]
     push dword [stdin]
-    push dword 64
+    push dword 69
     push ebx
     call fgets
     add esp, 12
